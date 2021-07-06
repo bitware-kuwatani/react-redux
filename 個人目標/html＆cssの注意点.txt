@@ -1,0 +1,42 @@
+・ファイルの使い方
+css- reset.css  →  初期設定を0にする
+   - common.css →　layoutなど全体的なもの
+   - xxx.css
+js - common.js
+
+
+・ブラウザーの初期値をリセットしないと、スクロールが出てしまう。
+
+* {
+ padding: 0;
+ margin: 0;
+
+}
+
+・Googel fonts
+
+レイアウト
+・grid 大きい
+・flex 小さい
+
+#container {
+ grid-template-columns: 1fr 7fr;
+ grid-template-rows: 0.5fr 7fr 0.5fr;
+ grid-template-areas: 
+ "header header"
+ "menue menue"
+ "footer footer"
+ ;
+}
+
+header {
+ grid-area: header;
+}
+
+#menu {
+ grid-area: menu;
+}
+
+footer {
+grid-area: footer;
+}
